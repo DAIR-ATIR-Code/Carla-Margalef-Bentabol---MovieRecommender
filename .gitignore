@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -103,6 +104,13 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# ---> CUDA
+*.i
+*.ii
+*.gpu
+*.ptx
+*.cubin
+*.fatbin
 
 # Default data and models folder
 data/
