@@ -26,7 +26,7 @@ def call_predict(model_name, model_version, url, data_dir, dataset_name, verbose
     print("Done.\n\nMovierec: provide movie recommendations to users based on their watch history.\n"
           "This script queries a model running in TensorRT Inference Server and prints recommendations.\n"
           "The inference request sent to the model is done with a random set of movies, and the top {} "
-          "are selected. Recommendations will be different every attempt.\n")
+          "are selected. Recommendations will be different every attempt.\n".format(K))
     while True:
         user_id = input("Enter movielens user ID (integer between 0 and {}) or 'exit' to exit... ".format(ml.NUM_USERS[dataset_name] - 1))
         if user_id.strip() == 'exit':
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Get movie recommendations for a user calling'
                                                  'a running TensorRT inference server')
     parser.add_argument('-d', '--data-dir', type=str, default='data/', help='Movielens dataset directory.')
-    parser.add_argument('-n', '--dataset-name', type=str, required=True, help='Movielens dataset name.')
+    parser.add_argument('-n', '--dataset-name', type=str, default='ml-1m', help='Movielens dataset name.')
     parser.add_argument('-m', '--model-name', type=str, default='movierec', help='Model name.')
     parser.add_argument('-vr', '--model-version', type=int, default=1, help='Model version.')
     parser.add_argument('-u', '--url', type=str, required=False, default='localhost:8000',
