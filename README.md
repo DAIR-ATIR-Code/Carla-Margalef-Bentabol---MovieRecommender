@@ -16,7 +16,7 @@ compatible model, and to run a sample command-line client to request inferences 
 [NVIDIA TensorRT Inference Server](https://docs.nvidia.com/deeplearning/sdk/tensorrt-inference-server-guide/docs/).
 
 ---
-###How to Clone to a Local Repository
+### How to Clone to a Local Repository
 
 Make sure you have git installed on your local machine, you have an ssh key for code.canarie.ca and you have properly setup your ~/.ssh/config.
 (See support section below if you need help with that.)
@@ -26,6 +26,6 @@ Once you are ready to clone the repository, run the following command on your lo
 git clone code.cloud.canarie.ca:carlamb/MovieRecommender.git        
 ```
 
-####How to Get Support
+#### How to Get Support
 
 Send email to dair.admin@canarie.ca
