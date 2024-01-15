@@ -23,7 +23,7 @@ Make sure you have git installed on your local machine, you have an ssh key for 
 
 Once you are ready to clone the repository, run the following command on your local machine:
 ```bash
-git clone code.cloud.canarie.ca:carlamb/MovieRecommender.git        
+git clone git@github.com:DAIR-ATIR-Code/Carla-Margalef-Bentabol---MovieRecommender.git       
 ```
 
 #### How to Get Support
